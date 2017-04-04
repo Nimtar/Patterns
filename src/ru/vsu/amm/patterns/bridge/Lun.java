@@ -7,6 +7,6 @@ public class Lun implements Dragon {
     }
     @Override
     public void breathe () {
-
+        System.out.println("Breathing is just a way to senility...");
     }
 }

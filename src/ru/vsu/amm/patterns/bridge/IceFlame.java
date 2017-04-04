@@ -1,7 +1,7 @@
 package ru.vsu.amm.patterns.bridge;
 
 public class IceFlame implements  Dragon {
-    private int bellyfull;
+    private Breath breath = new IceBreath();
     private int bloodcurdliness;
 
     public IceFlame () {
@@ -9,7 +9,7 @@ public class IceFlame implements  Dragon {
     }
     @Override
     public void breathe () {
-        bellyfull += 2;
+        ((IceBreath)breath).freeze();
         bloodcurdliness++;
     }
 }
